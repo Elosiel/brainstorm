@@ -1,0 +1,105 @@
+section.top-nav {
+    background-color: #fafafa;
+    padding-top: 20px;
+}
+
+section.top-nav #logo {
+    margin-left: 40px;
+    line-height: 46px;
+}
+
+section.top-nav #logo img {
+    max-width: 100%;
+}
+
+section.top-nav #menu ul {
+    margin-bottom: 0px;
+    float: right;
+}
+
+section.top-nav #menu ul li a {
+    color: #232328;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    text-transform: uppercase;
+    display: block;
+    padding: 25px 30px;
+    text-decoration: none;
+    transition: background-color 0.5s linear;
+}
+
+section.top-nav #menu ul li:not(:last-child) a:hover {
+    background-color: #dedede;
+}
+
+section.top-nav #menu ul li {
+    margin-right: 0px;
+    float: left;
+}
+
+section.top-nav #menu ul li:last-child a {
+    background-color: #ffcb02;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+section.top-nav #menu ul li:last-child a:hover {
+    background-color: #ff6308;
+}
+
+section.top-nav #menu ul li:last-child a:after {
+    border-right: 10px solid transparent;
+    border-top: 75px solid #FAFAFA;
+    content: "";
+    display: block;
+    height: 0;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 0;
+}
+
+section.top-nav #toggle-menu {
+    margin-bottom: 15px;
+}
+
+section.top-nav #toggle-menu a {
+    color: #232328;
+    text-transform: uppercase;
+    text-decoration: none
+}
+
+@media (max-width: 767px) {
+    section.top-nav #logo {
+        margin-left: 0px;
+    }
+    section.top-nav #menu ul li {
+        width: 100%;
+    }
+    section.top-nav #menu ul li:last-child a:after {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    section.top-nav #menu {
+        display: block;
+        height: auto;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section.top-nav #logo {
+        margin-left: 0px;
+    }
+    section.top-nav #menu ul li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+    section.top-nav #menu ul li:last-child a:after {
+        display: none;
+    }
+}
